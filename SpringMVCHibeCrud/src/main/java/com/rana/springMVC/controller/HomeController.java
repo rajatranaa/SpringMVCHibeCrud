@@ -31,11 +31,11 @@ public class HomeController {
 	
 	 
     @RequestMapping(value= "/saveEmployee", method = RequestMethod.POST)    
-    public  ModelAndView saveEmp(@ModelAttribute("employee")Employee employee, HttpServletRequest req ) throws Exception 
+    public  ModelAndView saveEmp(EmployeeDto employeDto, HttpServletRequest req ) throws Exception 
     {
     	System.out.println("hello");
      	ModelAndView model = new ModelAndView();
-        employeeService.saveEmployee(employee);
+        employeeService.saveEmployee(employeDto);
      	model.setViewName("success");
      	
      	return model;

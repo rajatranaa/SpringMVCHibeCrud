@@ -2,18 +2,14 @@ package com.rana.springMVC.dto;
 
 public class EmployeeDto {
 	
-	private Integer empId;
 	private String firstName;
 	private String lastName;
-	private Integer age;
+	private String age;
 	private String education;
 	private String salary;
-	public Integer getEmpId() {
-		return empId;
-	}
-	public void setEmpId(Integer empId) {
-		this.empId = empId;
-	}
+	
+	
+
 	public String getFirstName() {
 		return firstName;
 	}
@@ -26,10 +22,10 @@ public class EmployeeDto {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	public Integer getAge() {
+	public String getAge() {
 		return age;
 	}
-	public void setAge(Integer age) {
+	public void setAge(String age) {
 		this.age = age;
 	}
 	public String getEducation() {

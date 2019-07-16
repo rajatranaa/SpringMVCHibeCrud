@@ -5,6 +5,6 @@ import com.rana.springMVC.model.Employee;
 
 public interface EmployeeService {
 	
-	public Employee saveEmployee(Employee employee) throws Exception;
+	public Employee saveEmployee(EmployeeDto employeDto) throws Exception;
 
 }

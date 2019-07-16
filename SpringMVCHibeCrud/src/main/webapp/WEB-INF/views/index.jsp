@@ -21,7 +21,7 @@
 
 	<h1 align="center" style="color: green">Registration Form</h1>
 	<div id="signUpDiv" style="width: 300px; margin: 0 auto; padding: 10px;">
-	 	 <form:form action="saveEmployee" commandName="employee" method="post">
+	 	 <form action="saveEmployee" method="post">
 		 		<div>
 		 		<label for="registrationFirstName"> First Name</label> 
 		 		<input type="text" class="form-control" id="firstName" name="firstName"><br/>
@@ -32,11 +32,11 @@
 		 		<input type="text" class="form-control" id="lastName" name="lastName"><br>
 		 		</div>
 		 		
-		 		<div>
+		 	<!-- 	<div>
 		 		<label for="registrationEmpId">Emp Id</label>
 		 		<input type="text" class="form-control" id="empId" name="empId"><br>
 		 		</div>
-		 		
+		 		 -->
 		 		<div>
 		 		<label for="registrationAge">Age</label>
 		 		<input type="text" class="form-control" id="age" name="age"><br>
@@ -49,13 +49,13 @@
 		 		
 		 		<div>
 		 		<label for="registrationEducation">Education</label>
-		 		<input type="text" class="form-control" id="edu" name="salary"><br>
+		 		<input type="text" class="form-control" id="edu" name="education"><br>
 		 		</div>
 		 		
 		 		<div>
 		 		<input type="submit" value="SAVE"/>
 		 		</div>	
-	 	</form:form> 	
+	 	</form> 	
 	</div>
 </div>
 
