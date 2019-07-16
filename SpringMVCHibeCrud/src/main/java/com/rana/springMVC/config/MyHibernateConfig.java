@@ -29,7 +29,7 @@ public class MyHibernateConfig {
     public LocalSessionFactoryBean sessionFactory() {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(dataSource());
-        sessionFactory.setPackagesToScan(new String[] { "com.rana.springMVC.model.Employee" });
+        sessionFactory.setPackagesToScan(new String[] { "com.rana.springMVC.model" });
         sessionFactory.setHibernateProperties(hibernateProperties());
         return sessionFactory;
      }
