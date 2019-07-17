@@ -17,12 +17,12 @@ public class Employee {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "EMP_ID" ,nullable = false)
-	private Long employeeId;
+	@Column(name = "ID",nullable = false)
+	private Long id;
 	
-	public void setEmployeeId(Long employeeId) {
-		this.employeeId = employeeId;
-	}
+	@Column(name = "EMP_ID")
+	private String employeeId;
+	
 	@Column(name = "FIRST_NAME")
 	private String firstName;
 	
@@ -32,12 +32,19 @@ public class Employee {
 	@Column(name = "AGE")
 	private String age;
 	
-	@Column(name = "EDUCATION")
-	private String education;
 	
-	@Column(name = "SALARY")
-	private String salary;
-	
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public String getEmployeeId() {
+		return employeeId;
+	}
+	public void setEmployeeId(String employeeId) {
+		this.employeeId = employeeId;
+	}
 	
 	public String getFirstName() {
 		return firstName;
@@ -52,24 +59,13 @@ public class Employee {
 		this.lastName = lastName;
 	}
 	
-	public String getEducation() {
-		return education;
-	}
-	public void setEducation(String education) {
-		this.education = education;
-	}
 	public String getAge() {
 		return age;
 	}
 	public void setAge(String age) {
 		this.age = age;
 	}
-	public String getSalary() {
-		return salary;
-	}
-	public void setSalary(String salary) {
-		this.salary = salary;
-	}
+
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}

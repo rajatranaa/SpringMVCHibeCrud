@@ -1,62 +1,105 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+<!DOCTYPE html>
 
+<!--A Design by W3layouts
+   Author: W3layout
+   Author URL: http://w3layouts.com
+   License: Creative Commons Attribution 3.0 Unported
+   License URL: http://creativecommons.org/licenses/by/3.0/
+   -->
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<html lang="en">
 
+<head>
+    <title>Gadget Sign Up Form a Flat Responsive Widget Template :: w3layouts </title>
+    <!-- Meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Gadget Sign Up Form Responsive Widget, Audio and Video players, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design"
+    />
+    <script>
+        addEventListener("load", function () { setTimeout(hideURLbar, 0); }, false); function hideURLbar() { window.scrollTo(0, 1); }
+    </script>
+    <!-- Meta tags -->
+    <!-- font-awesome icons -->
+    <link href="resouces/css/font-awesome.min.css" rel="stylesheet">
+    <!-- //font-awesome icons -->
+    <!--stylesheets-->
+    <link href="resources/css/style.css" rel='stylesheet' type='text/css' media="all">
+    <!--//style sheet end here-->
+    <link href="//fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+</head>
+<body>
+    <h1 class="error">Gadget Sign Up Form</h1>
+	<!---728x90--->
+    <div class="w3layouts-two-grids">
+	<!---728x90--->
+        <div class="mid-class">
+            <div class="img-right-side">
+                <h3>Manage Your Gadgets Account</h3>
+                <img src="resources/images/b11.png" class="img-fluid" alt="">
+            </div>
+            <div class="txt-left-side">
+                <h2> Sign Up Here </h2>
+                <form action="#" method="post">
+                    <div class="form-left-to-w3l">
+                        <span class="fa fa-user-o" aria-hidden="true"></span>
+                        <input type="text" name="Name" placeholder=" Name" required="">
 
-<style>
-	.divBackImg{
-		background-image: url("./images/tenis-ideal-pisada-supinada");
-	}
-</style>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="form-left-to-w3l">
+                        <span class="fa fa-phone" aria-hidden="true"></span>
+                        <input type="text" name="Phone" placeholder="Phone" required="">
 
+                        <div class="clear"></div>
+                    </div>
+                    <div class="form-left-to-w3l">
+                        <span class="fa fa-envelope-o" aria-hidden="true"></span>
+                        <input type="email" name="email" placeholder="Email" required="">
 
+                        <div class="clear"></div>
+                    </div>
+                    <div class="form-left-to-w3l ">
 
-<div id="mainDiv" style="background-color:lightblue"> 
+                        <span class="fa fa-lock" aria-hidden="true"></span>
+                        <input type="password" name="password" placeholder="Password" required="">
+                        <div class="clear"></div>
+                    </div>
+                    <div class="main-two-w3ls">
+                        <div class="left-side-forget">
+                            <input type="checkbox" class="checked">
+                            <span class="remenber-me">Remember me </span>
+                        </div>
+                        <div class="right-side-forget">
+                            <a href="#" class="for">Forgot password...?</a>
+                        </div>
+                    </div>
+                    <div class="btnn">
+                        <button type="submit">Sign Up </button>
+                    </div>
+                </form>
+                <div class="w3layouts_more-buttn">
+                    <h3>Don't Have an account..?
+                        <a href="#">Login Here
+                        </a>
+                    </h3>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+	<!---728x90--->
+    <footer class="copyrigh-wthree">
+        <p>
+            © 2019 Gadget Sign Up Form. All Rights Reserved | Design by
+            <a href="http://www.W3Layouts.com" target="_blank">W3Layouts</a>
+        </p>
+    </footer>
+</body>
 
-	<h1 align="center" style="color: green">Registration Form</h1>
-	<div id="signUpDiv" style="width: 300px; margin: 0 auto; padding: 10px;">
-	 	 <form action="saveEmployee" method="post">
-		 		<div>
-		 		<label for="registrationFirstName"> First Name</label> 
-		 		<input type="text" class="form-control" id="firstName" name="firstName"><br/>
-		 		</div>
-		 		
-		 		<div>
-		 		<label for="registrationLastName">Last Name</label>
-		 		<input type="text" class="form-control" id="lastName" name="lastName"><br>
-		 		</div>
-		 		
-		 	<!-- 	<div>
-		 		<label for="registrationEmpId">Emp Id</label>
-		 		<input type="text" class="form-control" id="empId" name="empId"><br>
-		 		</div>
-		 		 -->
-		 		<div>
-		 		<label for="registrationAge">Age</label>
-		 		<input type="text" class="form-control" id="age" name="age"><br>
-		 		</div>
-		 		
-		 		<div>
-		 		<label for="registrationSalary">Salary</label>
-		 		<input type="text" class="form-control" id="salary" name="salary"><br>
-		 		</div>
-		 		
-		 		<div>
-		 		<label for="registrationEducation">Education</label>
-		 		<input type="text" class="form-control" id="edu" name="education"><br>
-		 		</div>
-		 		
-		 		<div>
-		 		<input type="submit" value="SAVE"/>
-		 		</div>	
-	 	</form> 	
-	</div>
-</div>
-
-
+</html>

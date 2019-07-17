@@ -2,6 +2,8 @@ package com.rana.springMVC.dto;
 
 public class EmployeeDto {
 	
+	private String empId;
+	
 	private String firstName;
 	private String lastName;
 	private String age;
@@ -9,7 +11,13 @@ public class EmployeeDto {
 	private String salary;
 	
 	
-
+	public String getEmpId() {
+		return empId;
+	}
+	public void setEmpId(String empId) {
+		this.empId = empId;
+	}
+	
 	public String getFirstName() {
 		return firstName;
 	}
