@@ -20,17 +20,17 @@ public class Employee {
 	@Column(name = "ID",nullable = false)
 	private Long id;
 	
-	@Column(name = "EMP_ID")
-	private String employeeId;
+	@Column(name = "NAME")
+	private String name;
 	
-	@Column(name = "FIRST_NAME")
-	private String firstName;
+	@Column(name = "PHONE_NO")
+	private Long phoneNo;
 	
-	@Column(name = "LAST_NAME")
-	private String lastName;
+	@Column(name = "EMAIL")
+	private String email;
 	
-	@Column(name = "AGE")
-	private String age;
+	@Column(name = "PASSWORD")
+	private String pass;
 	
 	
 	public Long getId() {
@@ -39,33 +39,30 @@ public class Employee {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public String getEmployeeId() {
-		return employeeId;
+	public String getName() {
+		return name;
 	}
-	public void setEmployeeId(String employeeId) {
-		this.employeeId = employeeId;
+	public void setName(String name) {
+		this.name = name;
 	}
-	
-	public String getFirstName() {
-		return firstName;
+	public Long getPhoneNo() {
+		return phoneNo;
 	}
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+	public void setPhoneNo(Long phoneNo) {
+		this.phoneNo = phoneNo;
 	}
-	public String getLastName() {
-		return lastName;
+	public String getEmail() {
+		return email;
 	}
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
+	public void setEmail(String email) {
+		this.email = email;
 	}
-	
-	public String getAge() {
-		return age;
+	public String getPass() {
+		return pass;
 	}
-	public void setAge(String age) {
-		this.age = age;
+	public void setPass(String pass) {
+		this.pass = pass;
 	}
-
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}

@@ -9,8 +9,30 @@ public class EmployeeDto {
 	private String age;
 	private String education;
 	private String salary;
+	private String Name;
+	private long Phone;
+	private String Email;
+	private String Password;
 	
 	
+	public String getName() {
+		return Name;
+	}
+	public void setName(String name) {
+		Name = name;
+	}
+	public String getEmail() {
+		return Email;
+	}
+	public void setEmail(String email) {
+		Email = email;
+	}
+	public String getPassword() {
+		return Password;
+	}
+	public void setPassword(String password) {
+		Password = password;
+	}
 	public String getEmpId() {
 		return empId;
 	}
@@ -47,6 +69,12 @@ public class EmployeeDto {
 	}
 	public void setSalary(String salary) {
 		this.salary = salary;
+	}
+	public long getPhone() {
+		return Phone;
+	}
+	public void setPhone(long phone) {
+		Phone = phone;
 	}
 	
 

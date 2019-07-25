@@ -20,10 +20,10 @@ public class EmployeeServiceImpl implements EmployeeService{
 		
 		Employee employee = new Employee();
 		
-		employee.setEmployeeId(employeeDto.getEmpId());
-		employee.setAge(employeeDto.getAge());
-		employee.setFirstName(employeeDto.getFirstName());
-		employee.setLastName(employeeDto.getLastName());
+		employee.setName(employeeDto.getName());
+		employee.setPhoneNo(employeeDto.getPhone());
+		employee.setEmail(employeeDto.getEmail());
+		employee.setPass(employeeDto.getPassword());
 	//	employee.setSalary((employeeDto.getSalary()));
 	//	employee.setEducation(employeeDto.getEducation());
 		

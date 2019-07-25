@@ -1,56 +1,41 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!--A Design by W3layouts
+   Author: W3layout
+   Author URL: http://w3layouts.com
+   License: Creative Commons Attribution 3.0 Unported
+   License URL: http://creativecommons.org/licenses/by/3.0/
+   -->
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-    <title>Gadget Sign Up Form a Flat Responsive Widget Template :: w3layouts </title>
+    <title>Allied Login Form a Flat Responsive Widget Template :: w3layouts </title>
     <!-- Meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="Gadget Sign Up Form Responsive Widget, Audio and Video players, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design"
+    <meta name="keywords" content="Allied Login Form Responsive Widget, Audio and Video players, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design"
     />
     <script>
         addEventListener("load", function () { setTimeout(hideURLbar, 0); }, false); function hideURLbar() { window.scrollTo(0, 1); }
     </script>
     <!-- Meta tags -->
     <!-- font-awesome icons -->
-    <link href="resources/css/font-awesome.min.css" rel="stylesheet">
+    <link href="resources/css/font1-awesome.min.css" rel="stylesheet">
     <!-- //font-awesome icons -->
     <!--stylesheets-->
-    <link href="resources/css/style.css" rel='stylesheet' type='text/css' media="all">
+    <link href="resources/css/style1.css" rel='stylesheet' type='text/css' media="all">
     <!--//style sheet end here-->
     <link href="//fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 </head>
+
 <body>
-    <h1 class="error">User Sign Up Form</h1>
-	<!---728x90--->
+    <h1 class="error">Allied Login Form</h1>
     <div class="w3layouts-two-grids">
-	<!---728x90--->
         <div class="mid-class">
-            <div class="img-right-side">
-                <h3>Manage Your Personal Account</h3>
-                <img src="resources/images/b11.png" class="img-fluid" alt="">
-            </div>
             <div class="txt-left-side">
-                <h2> Sign Up Here </h2>
-                <form action="saveEmployee" method="post">
-                    <div class="form-left-to-w3l">
-                        <span class="fa fa-user-o" aria-hidden="true"></span>
-                        <input type="text" name="Name" placeholder=" Name" required="">
-
-                        <div class="clear"></div>
-                    </div>
-                    <div class="form-left-to-w3l">
-                        <span class="fa fa-phone" aria-hidden="true"></span>
-                        <input type="text" name="Phone" placeholder="Phone" required="">
-
-                        <div class="clear"></div>
-                    </div>
+                <h2> Login Here </h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget</p>
+                <form action="#" method="post">
                     <div class="form-left-to-w3l">
                         <span class="fa fa-envelope-o" aria-hidden="true"></span>
                         <input type="email" name="email" placeholder="Email" required="">
@@ -73,23 +58,27 @@
                         </div>
                     </div>
                     <div class="btnn">
-                        <button type="submit">Sign Up </button>
+                        <button type="submit">Login </button>
                     </div>
                 </form>
                 <div class="w3layouts_more-buttn">
                     <h3>Don't Have an account..?
-                        <a href="./goToLoginPage">Login Here
+                        <a href="#">Register Here
                         </a>
                     </h3>
                 </div>
-                <div class="clear"></div>
+
+            </div>
+            <div class="img-right-side">
+                <h3>Welcome To Allied Login Form</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget</p>
+                <img src="resources/images/b12.png" class="img-fluid" alt="">
             </div>
         </div>
     </div>
-	<!---728x90--->
     <footer class="copyrigh-wthree">
         <p>
-            Â© 2019 Gadget Sign Up Form. All Rights Reserved | Design by
+            © 2019 Allied Login Form. All Rights Reserved | Design by
             <a href="http://www.W3Layouts.com" target="_blank">W3Layouts</a>
         </p>
     </footer>

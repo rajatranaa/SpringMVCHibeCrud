@@ -1,6 +1,8 @@
 package com.rana.springMVC.controller;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -23,7 +25,6 @@ public class HomeController {
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public ModelAndView homePage(HttpServletRequest request) {
-		
 		ModelAndView model = new ModelAndView();
 		model.setViewName("index");
 		return model;
@@ -36,9 +37,14 @@ public class HomeController {
     	System.out.println("hello");
      	ModelAndView model = new ModelAndView();
         employeeService.saveEmployee(employeDto);
-     	model.setViewName("success");
-     	
+     	model.setViewName("login");
      	return model;
     }
     
+    @RequestMapping(value = "/goToLoginPage")
+	 public ModelAndView goToLoginPage(HttpServletRequest request,HttpServletResponse response) throws Exception {
+	 ModelAndView model = new ModelAndView();
+	 model.setViewName("login");
+	 return model;
+ }
 }
