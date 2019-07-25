@@ -30,7 +30,7 @@
             <div class="txt-left-side">
                 <h2> Login Here </h2>
                 <p></p>
-                <form action="#" method="post">
+                <form action="/getLoginDetails" method="post">
                     <div class="form-left-to-w3l">
                         <span class="fa fa-envelope-o" aria-hidden="true"></span>
                         <input type="email" name="email" placeholder="Email" required="">

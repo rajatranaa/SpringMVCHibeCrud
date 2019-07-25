@@ -46,5 +46,12 @@ public class HomeController {
 	 ModelAndView model = new ModelAndView();
 	 model.setViewName("login");
 	 return model;
- }
+    }
+    
+    @RequestMapping(value = "/getLoginDetails")
+	 public ModelAndView getLoginDetails(HttpServletRequest request,HttpServletResponse response) throws Exception {
+	 ModelAndView model = new ModelAndView();
+	 model.setViewName("login");
+	 return model;
+    }
 }
