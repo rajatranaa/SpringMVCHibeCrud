@@ -1,9 +1,4 @@
-<!--A Design by W3layouts
-   Author: W3layout
-   Author URL: http://w3layouts.com
-   License: Creative Commons Attribution 3.0 Unported
-   License URL: http://creativecommons.org/licenses/by/3.0/
-   -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,22 +14,22 @@
     </script>
     <!-- Meta tags -->
     <!-- font-awesome icons -->
-    <link href="resources/css/font1-awesome.min.css" rel="stylesheet">
+    <link href="resources/css/font-awesome.min.css" rel="stylesheet">
     <!-- //font-awesome icons -->
     <!--stylesheets-->
-    <link href="resources/css/style1.css" rel='stylesheet' type='text/css' media="all">
+    <link href="resources/css/style.css" rel='stylesheet' type='text/css' media="all">
     <!--//style sheet end here-->
     <link href="//fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 </head>
 
 <body>
-    <h1 class="error">Allied Login Form</h1>
+    <h1 class="error">Login Form</h1>
     <div class="w3layouts-two-grids">
         <div class="mid-class">
             <div class="txt-left-side">
                 <h2> Login Here </h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget</p>
+                <p></p>
                 <form action="#" method="post">
                     <div class="form-left-to-w3l">
                         <span class="fa fa-envelope-o" aria-hidden="true"></span>
@@ -70,16 +65,15 @@
 
             </div>
             <div class="img-right-side">
-                <h3>Welcome To Allied Login Form</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget</p>
+                <h3>Welcome To Login Form</h3>
+                <p></p>
                 <img src="resources/images/b12.png" class="img-fluid" alt="">
             </div>
         </div>
     </div>
     <footer class="copyrigh-wthree">
         <p>
-            © 2019 Allied Login Form. All Rights Reserved | Design by
-            <a href="http://www.W3Layouts.com" target="_blank">W3Layouts</a>
+            © 2019 RjR Login Form. All Rights Reserved
         </p>
     </footer>
 </body>

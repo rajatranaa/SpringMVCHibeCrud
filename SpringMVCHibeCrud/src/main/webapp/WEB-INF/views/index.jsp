@@ -89,8 +89,7 @@
 	<!---728x90--->
     <footer class="copyrigh-wthree">
         <p>
-            © 2019 Gadget Sign Up Form. All Rights Reserved | Design by
-            <a href="http://www.W3Layouts.com" target="_blank">W3Layouts</a>
+            © 2019 RjR Sign Up Form. All Rights Reserved
         </p>
     </footer>
 </body>
