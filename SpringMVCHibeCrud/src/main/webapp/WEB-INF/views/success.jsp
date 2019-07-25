@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>SuccessFully Saved in Database</h1>
+<h1>Welcome Mr.  ${employee.name} </h1>
 </body>
 </html>

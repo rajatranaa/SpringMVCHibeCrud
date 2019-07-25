@@ -1,5 +1,7 @@
 package com.rana.springMVC.dao;
 
+import java.util.List;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,5 +30,20 @@ public class EmployeeDaoImpl implements EmployeeDao {
 			exception.printStackTrace();
 		}
 		return employee;
+	}
+
+
+
+	@Transactional(rollbackFor = { Exception.class })
+	public Employee getEmployeeByEmailId(String email) {
+		
+		Session session = this.sessionFactory.getCurrentSession();
+		String query = "from Employee emp  where emp.email = :email";
+		List<Employee> empList = session.createQuery(query).setString("email", email).list();
+		Employee emp = null;
+		if (empList != null && empList.size() > 0) {
+			emp = (Employee) empList.iterator().next();
+		}		
+		return emp;
 	}
 }

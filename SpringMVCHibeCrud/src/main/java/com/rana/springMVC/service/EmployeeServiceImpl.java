@@ -1,5 +1,8 @@
 package com.rana.springMVC.service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -28,6 +31,23 @@ public class EmployeeServiceImpl implements EmployeeService{
 	//	employee.setEducation(employeeDto.getEducation());
 		
 		return employeeDao.saveEmployee(employee);
+	}
+
+
+	public Employee getEmployeeByEmailId(EmployeeDto employeDto) throws Exception {
+		
+		Employee emp = new Employee();
+		try {
+			 emp = 	employeeDao.getEmployeeByEmailId(employeDto.getEmail());
+			   if(emp != null  && emp.getPass() != null) {
+				 if(employeDto.getPassword().equalsIgnoreCase(emp.getPass())) {
+					System.out.println("Login succesfull"+emp.getName()+"   "+emp.getEmail());
+				}
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return emp;
 	}
 	
 		

@@ -2,8 +2,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+
+    window.onload= function () {
+    	
+    	var pnum = '${flag}';
+    	
+    	alert("======"+pum)
+    	if(pnum ==0){
+    		$("#uploadXlsHistoryDivTitle").show();
+    	};	
+    };
+
+</script>
+
 <head>
-    <title>Allied Login Form a Flat Responsive Widget Template :: w3layouts </title>
+    <title>RjR</title>
     <!-- Meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -29,7 +44,10 @@
         <div class="mid-class">
             <div class="txt-left-side">
                 <h2> Login Here </h2>
-                <p></p>
+                <div class="require_wrap_table datatable_filter">
+	            <h5 id="uploadXlsHistoryDivTitle" style="display: none;">Invalid Credentials</h5>
+		        <div id="errorDataDIV"></div>
+                </div>
                 <form action="/getLoginDetails" method="post">
                     <div class="form-left-to-w3l">
                         <span class="fa fa-envelope-o" aria-hidden="true"></span>
@@ -43,7 +61,7 @@
                         <input type="password" name="password" placeholder="Password" required="">
                         <div class="clear"></div>
                     </div>
-                    <div class="main-two-w3ls">
+                   <!--  <div class="main-two-w3ls">
                         <div class="left-side-forget">
                             <input type="checkbox" class="checked">
                             <span class="remenber-me">Remember me </span>
@@ -51,14 +69,14 @@
                         <div class="right-side-forget">
                             <a href="#" class="for">Forgot password...?</a>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="btnn">
                         <button type="submit">Login </button>
                     </div>
                 </form>
                 <div class="w3layouts_more-buttn">
                     <h3>Don't Have an account..?
-                        <a href="#">Register Here
+                        <a href="/">Register Here
                         </a>
                     </h3>
                 </div>
@@ -77,5 +95,11 @@
         </p>
     </footer>
 </body>
-
 </html>
+
+<script>
+function importassociteSel(json){			
+			$("#recentHistoryDiv").hide();
+			$("#uploadXlsHistoryDivTitle").show();
+		}
+</script>

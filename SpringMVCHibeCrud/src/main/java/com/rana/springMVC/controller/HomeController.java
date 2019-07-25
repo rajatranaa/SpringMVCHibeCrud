@@ -48,10 +48,19 @@ public class HomeController {
 	 return model;
     }
     
-    @RequestMapping(value = "/getLoginDetails")
-	 public ModelAndView getLoginDetails(HttpServletRequest request,HttpServletResponse response) throws Exception {
-	 ModelAndView model = new ModelAndView();
-	 model.setViewName("login");
+    @RequestMapping(value = "/getLoginDetails",  method = RequestMethod.POST)
+	 public ModelAndView getLoginDetails(EmployeeDto employeDto, HttpServletRequest req ) throws Exception {
+     ModelAndView model = new ModelAndView();	
+     Employee employee = new Employee();	
+     employee =  employeeService.getEmployeeByEmailId(employeDto);
+     if(employee != null  && ! employee.getEmail().isEmpty()) {
+    	 model.setViewName("success"); 
+    	 model.addObject("employee", employee);
+     }else {
+    	 int flag = 0;
+    	 model.setViewName("login");
+    	 model.addObject(flag);
+     }
 	 return model;
     }
 }

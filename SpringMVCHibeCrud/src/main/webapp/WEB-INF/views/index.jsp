@@ -7,7 +7,7 @@
 <html lang="en">
 
 <head>
-    <title>Gadget Sign Up Form a Flat Responsive Widget Template :: w3layouts </title>
+    <title>RjR </title>
     <!-- Meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -63,7 +63,7 @@
                         <input type="password" name="password" placeholder="Password" required="">
                         <div class="clear"></div>
                     </div>
-                    <div class="main-two-w3ls">
+                   <!--  <div class="main-two-w3ls">
                         <div class="left-side-forget">
                             <input type="checkbox" class="checked">
                             <span class="remenber-me">Remember me </span>
@@ -71,14 +71,14 @@
                         <div class="right-side-forget">
                             <a href="#" class="for">Forgot password...?</a>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="btnn">
                         <button type="submit">Sign Up </button>
                     </div>
                 </form>
                 <div class="w3layouts_more-buttn">
-                    <h3>Don't Have an account..?
-                        <a href="./goToLoginPage">Login Here
+                    <h3>Already Have an account..?
+                        <a href="/goToLoginPage">Login Here
                         </a>
                     </h3>
                 </div>
@@ -89,7 +89,7 @@
 	<!---728x90--->
     <footer class="copyrigh-wthree">
         <p>
-            Â© 2019 RjR Sign Up Form. All Rights Reserved
+            © 2019 RjR Sign Up Form. All Rights Reserved
         </p>
     </footer>
 </body>
