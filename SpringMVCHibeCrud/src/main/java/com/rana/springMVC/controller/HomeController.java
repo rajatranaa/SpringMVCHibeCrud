@@ -54,13 +54,21 @@ public class HomeController {
      Employee employee = new Employee();	
      employee =  employeeService.getEmployeeByEmailId(employeDto);
      if(employee != null  && ! employee.getEmail().isEmpty()) {
-    	 model.setViewName("success"); 
+    	 model.setViewName("agriculture"); 
     	 model.addObject("employee", employee);
      }else {
-    	 int flag = 0;
+    	 int flag = 13;
     	 model.setViewName("login");
-    	 model.addObject(flag);
+    	 model.addObject("flag", flag);
      }
 	 return model;
     }
+    
+    @RequestMapping(value = "/agriculture")
+	public ModelAndView goBackToHome(HttpServletRequest request) {
+		ModelAndView model = new ModelAndView();
+		model.setViewName("index");
+		return model;
+	}
+	
 }

@@ -5,16 +5,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript">
 
-    window.onload= function () {
-    	
-    	var pnum = '${flag}';
-    	
-    	alert("======"+pum)
-    	if(pnum ==0){
+$(document).ready(function() {
+    	var flag = '${flag}';
+    	if(flag ==13){
     		$("#uploadXlsHistoryDivTitle").show();
-    	};	
-    };
-
+    	}
+    });
 </script>
 
 <head>
@@ -44,10 +40,7 @@
         <div class="mid-class">
             <div class="txt-left-side">
                 <h2> Login Here </h2>
-                <div class="require_wrap_table datatable_filter">
-	            <h5 id="uploadXlsHistoryDivTitle" style="display: none;">Invalid Credentials</h5>
-		        <div id="errorDataDIV"></div>
-                </div>
+               
                 <form action="/getLoginDetails" method="post">
                     <div class="form-left-to-w3l">
                         <span class="fa fa-envelope-o" aria-hidden="true"></span>
@@ -61,6 +54,9 @@
                         <input type="password" name="password" placeholder="Password" required="">
                         <div class="clear"></div>
                     </div>
+                     <div class="require_wrap_table datatable_filter">
+	                 <h5 id="uploadXlsHistoryDivTitle" style="display:none; color:red">Invalid Credentials</h5>
+                     </div>
                    <!--  <div class="main-two-w3ls">
                         <div class="left-side-forget">
                             <input type="checkbox" class="checked">
@@ -96,10 +92,3 @@
     </footer>
 </body>
 </html>
-
-<script>
-function importassociteSel(json){			
-			$("#recentHistoryDiv").hide();
-			$("#uploadXlsHistoryDivTitle").show();
-		}
-</script>
