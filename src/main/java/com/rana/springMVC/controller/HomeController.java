@@ -51,14 +51,15 @@ public class HomeController {
     @RequestMapping(value = "/getLoginDetails",  method = RequestMethod.POST)
 	 public ModelAndView getLoginDetails(EmployeeDto employeDto, HttpServletRequest req ) throws Exception {
      ModelAndView model = new ModelAndView();	
-   //  Employee employee = new Employee();	
-     employeDto =  employeeService.getEmployeeByEmailId(employeDto);
-     if(employeDto.getStatus() == 1) {
-    	 model.setViewName("success"); 
-    	 model.addObject("employee", employeDto);
+     Employee employee = new Employee();	
+     employee =  employeeService.getEmployeeByEmailId(employeDto);
+     if(employee != null  && ! employee.getEmail().isEmpty()) {
+    	 model.setViewName("agriculture"); 
+    	 model.addObject("employee", employee);
      }else {
+    	 int flag = 13;
     	 model.setViewName("login");
-    	 model.addObject("employee", employeDto);
+    	 model.addObject("flag", flag);
      }
 	 return model;
     }

@@ -6,8 +6,8 @@
 <script type="text/javascript">
 
 $(document).ready(function() {
-    	var flag =  '${employeDto.getStatus}';
-    	if(flag == 0){
+    	var flag = '${flag}';
+    	if(flag ==13){
     		$("#uploadXlsHistoryDivTitle").show();
     	}
     });
@@ -41,7 +41,7 @@ $(document).ready(function() {
             <div class="txt-left-side">
                 <h2> Login Here </h2>
                
-                <form action="./getLoginDetails" method="post">
+                <form action="/getLoginDetails" method="post">
                     <div class="form-left-to-w3l">
                         <span class="fa fa-envelope-o" aria-hidden="true"></span>
                         <input type="email" name="email" placeholder="Email" required="">
@@ -57,7 +57,15 @@ $(document).ready(function() {
                      <div class="require_wrap_table datatable_filter">
 	                 <h5 id="uploadXlsHistoryDivTitle" style="display:none; color:red">Invalid Credentials</h5>
                      </div>
-
+                   <!--  <div class="main-two-w3ls">
+                        <div class="left-side-forget">
+                            <input type="checkbox" class="checked">
+                            <span class="remenber-me">Remember me </span>
+                        </div>
+                        <div class="right-side-forget">
+                            <a href="#" class="for">Forgot password...?</a>
+                        </div>
+                    </div> -->
                     <div class="btnn">
                         <button type="submit">Login </button>
                     </div>

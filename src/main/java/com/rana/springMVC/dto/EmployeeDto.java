@@ -13,7 +13,6 @@ public class EmployeeDto {
 	private long Phone;
 	private String Email;
 	private String Password;
-	private int status;
 	
 	
 	public String getName() {
@@ -77,11 +76,6 @@ public class EmployeeDto {
 	public void setPhone(long phone) {
 		Phone = phone;
 	}
-	public int getStatus() {
-		return status;
-	}
-	public void setStatus(int status) {
-		this.status = status;
-	}
+	
 
 }

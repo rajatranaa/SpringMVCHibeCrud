@@ -7,6 +7,6 @@ public interface EmployeeService {
 	
 	public Employee saveEmployee(EmployeeDto employeDto) throws Exception;
 	
-	public EmployeeDto getEmployeeByEmailId(EmployeeDto employeDto) throws Exception;
+	public Employee getEmployeeByEmailId(EmployeeDto employeDto) throws Exception;
 
 }

@@ -34,7 +34,7 @@ public class EmployeeServiceImpl implements EmployeeService{
 	}
 
 
-	public EmployeeDto getEmployeeByEmailId(EmployeeDto employeDto) throws Exception {
+	public Employee getEmployeeByEmailId(EmployeeDto employeDto) throws Exception {
 		
 		Employee emp = new Employee();
 		try {
@@ -42,20 +42,12 @@ public class EmployeeServiceImpl implements EmployeeService{
 			   if(emp != null  && emp.getPass() != null) {
 				 if(employeDto.getPassword().equalsIgnoreCase(emp.getPass())) {
 					System.out.println("Login succesfull"+emp.getName()+"   "+emp.getEmail());
-					employeDto.setFirstName(emp.getName());
-					employeDto.setPhone(emp.getPhoneNo());
-					employeDto.setStatus(1);
-					
 				}
-				 else {
-					 System.out.println("Login failed");
-					 employeDto.setStatus(0);
-				 }
 			}
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-		return employeDto;
+		return emp;
 	}
 	
 		

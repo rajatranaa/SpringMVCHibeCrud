@@ -78,7 +78,7 @@
                 </form>
                 <div class="w3layouts_more-buttn">
                     <h3>Already Have an account..?
-                        <a href="./goToLoginPage">Login Here
+                        <a href="/goToLoginPage">Login Here
                         </a>
                     </h3>
                 </div>
